@@ -1,0 +1,128 @@
+.others-products {
+	margin-top: 16rem;
+	margin-bottom: 5rem;
+	@media only screen and (max-width: 74.9375em) {
+		margin-top: 9rem;
+	}
+	.featured-box,
+	.sale-box,
+	.random-box {
+		@media only screen and (max-width: 61.9375em) {
+			padding-bottom: 5rem;
+		}
+	}
+	.products-type-title {
+		color: black;
+		font-family: 'LatoBlack', sans-serif;
+		font-size: 1.6rem;
+		text-transform: uppercase;
+	}
+	.product-item {
+		display: flex;
+		padding-bottom: 2.5rem;
+		margin-top: 2.5rem;
+		.product-photo {
+			background-color: #f5f5f5;
+			height: 8rem;
+			width: 7rem;
+		}
+		.product-proposal {
+			padding-left: 2rem;
+			.product-heading {
+				color: $headingsColor;
+				font-family: 'LatoBold', sans-serif;
+				font-size: 1.4rem;
+				text-transform: uppercase;
+				line-height: 1.5;
+				margin-top: .4rem;
+				padding-bottom: .6rem;
+			}
+			.product-price {
+				color: #808080;
+				font-family: 'Open Sans';
+				font-weight: 300;
+				font-size: 1.6rem;
+				.discount {
+					color: $primaryColor;
+					font-family: 'Open Sans', sans-serif;
+					font-weight: bold;
+					padding-left: .5rem;
+				}
+			}
+		}
+	}
+
+	form {
+		background-color: #f6f6f6;
+		height: 33rem;
+		width: 100%;
+		margin-top: 8.5rem;
+		position: relative;
+		overflow: hidden;
+		z-index: 0;
+		@media only screen and (max-width: 74.9375em) {
+			max-width: 100%;
+			height: auto;
+			margin-top: 4rem;
+		}
+		&:before {
+			content: 'x';
+			display: inline-block;
+			position: absolute;
+			top: -39rem;
+			left: -5rem;
+			color: #fafafa;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 70rem;
+			z-index: -1;
+			@media only screen and (max-width: 74.9375em) {
+				display: none;
+			}
+		}
+		.form-email {
+			padding: 4rem 3rem;
+			text-align: center;
+			.form-heading {
+				color: $headingsColor;
+				font-family: 'LatoBlack', sans-serif;
+				font-size: 2.2rem;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				padding-bottom: 2rem;
+			}
+			.form-text {
+				color: #999;
+				font-family: 'LatoRegular', sans-serif;
+				font-size: 1.4rem;
+				line-height: 1.5;
+				padding-bottom: 1.5rem;
+			}
+			.input-place {
+				position: relative;
+				input[type="email"] {
+					height: 4rem;
+					width: 21rem;
+					border: none;
+					padding-left: 1.5rem;
+					@media only screen and (max-width: 74.9375em) {
+						width: 100%;
+					}
+				}
+				::-webkit-input-placeholder { color: #a7a7a7; }
+				::-moz-placeholder { color: #a7a7a7; }
+				:-ms-input-placeholder { color: #a7a7a7; }
+				:-moz-placeholder { color: #a7a7a7; }
+
+				button[type="submit"] {
+					color: #a7a7a7;
+					line-height: .6;
+					font-size: 3.5rem;
+					position: absolute;
+					top: 25%;
+					right: 5%;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}

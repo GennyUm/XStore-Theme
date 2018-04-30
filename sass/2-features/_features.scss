@@ -1,0 +1,38 @@
+.feature-box {
+	text-align: center;
+	margin-top: 5rem;
+	
+	&__icon {
+		padding-top: 6rem;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: content;
+		margin-bottom: 2rem;
+		&--coupon {
+			background-image: url(../img/features/coupon.png);
+		}
+		&--medal {
+			background-image: url(../img/features/medal.png);
+		}
+		&--gift {
+			background-image: url(../img/features/gift-card.png);
+		}
+		&--support {
+			background-image: url(../img/features/support.png);
+		}
+	}
+
+	&__heading {
+		color: $headingsColor;
+		font-family: 'LatoBlack', sans-serif;
+		font-size: 1.6rem;
+		margin-bottom: 1rem;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		color: #a6a6a6;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1.5rem;
+	}
+}

@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="fonts/fonts/fonts.css">
+	<link rel="stylesheet" href="css/fontawesome-all.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>XStore</title>
+</head>
+<body>
+	<header class="home" id="home">
+		<div class="home__top-user-panel">
+			<div class="home__panel-boxes home__panel-boxes--order-box">
+				<div class="home__lang">
+					<span>English</span>
+					<i class="fas fa-caret-down"></i>
+				</div>
+				<div class="home__value">
+					<span>USD / $</span>
+					<i class="fas fa-caret-down"></i>
+				</div>
+				<div class="home__order">
+					<a href="#popup" class="order-button">
+						Order online
+					</a> 
+					<span>or</span> 
+					<a href="tel:+1800 000 8808" class="tel">
+						call us (+1800) 000 8808
+					</a>
+				</div>
+			</div>
+			<div class="home__panel-boxes home__panel-boxes--arrow-btn">
+				<button type="button" value="button" class="home__dropdown-arrow">
+					<i class="fas fa-chevron-down"></i>
+				</button>
+			</div>
+			<div class="home__panel-boxes home__panel-boxes--signup-box">
+				<div class="home__signup">
+					<button type="button" value="button" class="signin" href="#">
+						Sign in
+					</button> 
+					<span>or</span> 
+					<button type="button" value="button" class="create" href="#">
+						Create an account
+					</button>
+				</div>
+				<div class="home__social-media">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="home__nav-box">
+			<div class="home__nav">
+				<a href="#" class="home__brand">
+					<span>x</span>store
+				</a>
+				<nav class="home__main-nav">
+					<ul class="home__nav-list">
+						<li class="home__list-item"><a class="active" href="#">home</a></li>
+						<li class="home__list-item"><a href="#">demos</a></li>
+						<li class="home__list-item"><a href="#">shop</a></li>
+						<li class="home__list-item"><a href="#">blog</a></li>
+						<li class="home__list-item"><a href="#">portfolio</a></li>
+						<li class="home__list-item"><a href="#">pages &amp; features</a></li>
+						<li class="home__list-item"><a href="#">purchase!</a></li>
+					</ul>
+				</nav>
+				<div class="home__search">
+					<input type="text" class="input-search" placeholder="Type here...">
+					<a href="#" class="close-search">&times;</a>
+				</div>
+				<i class="fas fa-search home__search-icon"></i>
+				<div class="home__user-bar">
+					<a href="#" class="home__favorites">
+						<i class="far fa-heart"></i>
+					</a>
+					<a href="#" class="home__purchases">
+						<i class="fas fa-shopping-basket"></i>
+					</a>
+					<div class="home__total-price">$899.98</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="home__img-box">
+			<img src="img/home-bg.png" class="home__img" alt="Home Image">
+			<div class="home__text">
+				<h1 class="home__heading">XStore <span>Theme</span></h1>
+				<p class="home__cta-text">build a site &amp; sell online</p>
+			</div>
+			<div class="img-toggles">
+				<span class="toggle active-toggle"></span>
+				<span class="toggle"></span>
+				<span class="toggle"></span>
+			</div>
+
+			<div class="home__basket">
+				<div class="home__basket-data-box">
+					<div class="home__basket-heading">
+						Recently added item(s)
+					</div>
+					<div class="home__basket-item">
+						<img src="img/card-img.png" class="basket-img" alt="Basket image">
+						<div class="basket-text">
+							<h4 class="item-heading">light man modern elegant suit</h4>
+							<div class="basket-price">1 x $499.99</div>
+						</div>
+						<a href="#" class="close-btn">&times;</a>
+					</div>
+					<div class="home__basket-item">
+						<img src="img/card-img.png" class="basket-img" alt="Basket image">
+						<div class="basket-text">
+							<h4 class="item-heading">light man modern elegant suit</h4>
+							<div class="basket-price">1 x $499.99</div>
+						</div>
+						<a href="#" class="close-btn">&times;</a>
+					</div>
+					<div class="home__basket-total">
+						Card sub-total: <span>$899.98</span>
+					</div>
+					<div class="home__basket-btns">
+						<a href="#" class="btn btn--check">Checkout</a>
+						<a href="#" class="btn btn--view">View card</a>
+					</div>
+				</div>
+				<a href="#" class="home__close-basket">&times;</a>
+			</div>
+		</div>
+	</header>
+
+
+	<section class="features">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-lg-3">
+					<div class="feature-box">
+						<div class="feature-box__icon feature-box__icon--coupon"></div>
+						<h3 class="feature-box__heading">Discount system</h3>
+						<p class="feature-box__text">Lorem ipsum incididunt.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="feature-box">
+						<div class="feature-box__icon feature-box__icon--medal"></div>
+						<h3 class="feature-box__heading">100% quality</h3>
+						<p class="feature-box__text">Lorem ipsum incididunt.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="feature-box">
+						<div class="feature-box__icon feature-box__icon--gift"></div>
+						<h3 class="feature-box__heading">Gifts cards</h3>
+						<p class="feature-box__text">Lorem ipsum incididunt.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="feature-box">
+						<div class="feature-box__icon feature-box__icon--support"></div>
+						<h3 class="feature-box__heading">24/7 support</h3>
+						<p class="feature-box__text">Lorem ipsum incididunt.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="new-collection">
+		<div class="container">
+			<div class="row">
+				<h2 class="heading-of-sections">
+					Product categories
+				</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-lg-3">
+					<figure class="new-collection__item">
+						<a href="#">
+							<img src="img/new-collection/dresses.png" alt="Dresses photo">
+						</a>
+						<figcaption class="caption-box">
+							<span class="quantity">13</span>
+							<span class="type">Dresses</span>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<figure class="new-collection__item">
+						<a href="#">
+							<img src="img/new-collection/bags.png" alt="Bags photo">
+						</a>
+						<figcaption class="caption-box">
+							<span class="quantity">25</span>
+							<span class="type">Bags</span>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<figure class="new-collection__item">
+						<a href="#">
+							<img src="img/new-collection/men.png" alt="For men photo">
+						</a>
+						<figcaption class="caption-box">
+							<span class="quantity">08</span>
+							<span class="type">Men</span>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<figure class="new-collection__item">
+						<a href="#">
+							<img src="img/new-collection/watches.png" alt="Watches photo">
+						</a>
+						<figcaption class="caption-box">
+							<span class="quantity">17</span>
+							<span class="type">Watches</span>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="top-interesting">
+
+		<div class="container">
+			<div class="row">
+				<h2 class="heading-of-sections top-interesting__heading">
+					Top interesting
+				</h2>
+			</div>
+			<div class="row">
+				<div class="top-interesting__proposed">
+					<a href="#" class="active">New arrivals</a>
+					<a href="#">Featured</a>
+					<a href="#">Special</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-lg-3">
+
+					<div class="angle slide-to-left">
+						<i class="fas fa-angle-left"></i>
+					</div>
+
+					<figure class="top-interesting__item">
+						<a href="#" class="img-box">
+							<img src="img/interesting/1.png" alt="Proposed photo">
+						</a>
+						<div class="caption-box">
+							<h3 class="interesting-heading">Splatter print shirt</h3>
+							<span class="type">shirts</span>
+							<span class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</span>
+							<span class="price">$199.98</span>
+						</div>
+					</figure>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<figure class="top-interesting__item">
+						<a href="#" class="img-box">
+							<img src="img/interesting/2.png" alt="Proposed photo">
+						</a>
+						<figcaption class="caption-box">
+							<h3 class="interesting-heading">Hope power dress</h3>
+							<span class="type">dresses</span>
+							<span class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</span>
+							<span class="price">$299.98</span>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<figure class="top-interesting__item">
+						<a href="#" class="img-box">
+							<img src="img/interesting/3.png" alt="Proposed photo">
+							<span class="sale"></span>
+						</a>
+						<figcaption class="caption-box">
+							<h3 class="interesting-heading">Long blouse dress</h3>
+							<span class="type">dresses</span>
+							<span class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</span>
+							<span class="price"><del>$350</del>$299.98</span>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<figure class="top-interesting__item">
+						<a href="#" class="img-box">
+							<img src="img/interesting/4.png" alt="Proposed photo">
+							<span class="overlay onhover">
+								<span class="out">Out of stock</span>
+							</span>
+						</a>
+						<figcaption class="caption-box">
+							<h3 class="interesting-heading">Brawing print shirt</h3>
+							<span class="type">shirts</span>
+							<span class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</span>
+							<span class="price">$299.98</span>
+						</figcaption>
+					</figure>
+
+					<div class="angle slide-to-right">
+						<i class="fas fa-angle-right"></i>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="news">
+		<div class="container">
+			<div class="row">
+				<h2 class="heading-of-sections news__heading">
+					Last news from our blog
+				</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<figure class="news__item">
+
+						<div class="angle slide-to-left">
+							<i class="fas fa-angle-left"></i>
+						</div>
+
+						<div class="img-box">
+							<img src="img/news/1.png" alt="News photo">
+							<a href="#" class="overlay onhover">
+								<div class="read-more">
+									Read more
+								</div>
+							</a>
+							<figcaption>Architecture</figcaption>
+						</div>
+						<div class="text-box">
+							<h3 class="caption">Learn how to design cool modern websites!</h3>
+							<div class="details">
+								<time datetime="2014-11-29 09:03">November 29, 2014 at 9:03</time>&nbsp;&nbsp; / &nbsp;
+								<a href="#"><i class="far fa-comment"></i> 0</a>&nbsp; / &nbsp;
+								<i class="fas fa-eye"></i> 2,542
+							</div>
+							<p class="text">
+								Etiam nulla nunc, aliquet vel metus nec, scelerisque tempus enim. Sed eget blandit lectus. Donec facilisis ornare turpis id pretium scelerisque interdum.
+							</p>
+							<div class="more">
+								<a href="#">Continue Reading <i class="fas fa-long-arrow-alt-right"></i></a>
+							</div>
+						</div>
+					</figure>
+				</div>
+
+				<div class="col-md-6 col-lg-4">
+					<figure class="news__item">
+						<div class="img-box">
+							<img src="img/news/2.png" alt="News photo">
+							<a href="#" class="overlay onhover">
+								<div class="read-more">
+									Read more
+								</div>
+							</a>
+							<figcaption>Architecture</figcaption>
+						</div>
+						<div class="text-box">
+							<h3 class="caption">Learn how to design cool modern websites!</h3>
+							<div class="details">
+								<time datetime="2014-11-29 09:03">November 29, 2014 at 9:03</time>&nbsp;&nbsp; / &nbsp;
+								<a href="#"><i class="far fa-comment"></i> 0</a>&nbsp; / &nbsp;
+								<i class="fas fa-eye"></i> 2,542
+							</div>
+							<p class="text">
+								Etiam nulla nunc, aliquet vel metus nec, scelerisque tempus enim. Sed eget blandit lectus. Donec facilisis ornare turpis id pretium scelerisque interdum.
+							</p>
+							<div class="more">
+								<a href="#">Continue Reading <i class="fas fa-long-arrow-alt-right"></i></a>
+							</div>
+						</div>
+					</figure>
+				</div>
+
+				<div class="col-md-6 col-lg-4">
+					<figure class="news__item">
+						<div class="img-box">
+							<img src="img/news/3.png" alt="News photo">
+							<a href="#" class="overlay onhover">
+								<div class="read-more">
+									Read more
+								</div>
+							</a>
+							<figcaption>Architecture</figcaption>
+						</div>
+						<div class="text-box">
+							<h3 class="caption">Learn how to design cool modern websites!</h3>
+							<div class="details">
+								<time datetime="2014-11-29 09:03">November 29, 2014 at 9:03</time>&nbsp;&nbsp; / &nbsp;
+								<a href="#"><i class="far fa-comment"></i> 0</a>&nbsp; / &nbsp;
+								<i class="fas fa-eye"></i> 2,542
+							</div>
+							<p class="text">
+								Etiam nulla nunc, aliquet vel metus nec, scelerisque tempus enim. Sed eget blandit lectus. Donec facilisis ornare turpis id pretium scelerisque interdum.
+							</p>
+							<div class="more">
+								<a href="#">Continue Reading <i class="fas fa-long-arrow-alt-right"></i></a>
+							</div>
+						</div>
+
+						<div class="angle slide-to-right">
+							<i class="fas fa-angle-right"></i>
+						</div>
+
+					</figure>
+				</div>
+			</div>
+
+			<div class="img-toggles">
+				<span class="toggle active-toggle"></span>
+				<span class="toggle"></span>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="themes">
+
+		<div class="container">
+			<div class="row">
+				<h2 class="heading-of-sections themes__heading">
+					Try another xstore theme
+				</h2>
+			</div>
+			<div class="themes__images">
+				<div class="themes__row">
+					<div class="row">
+						<div class="col-sm-6 col-md-4 col-lg-2">
+
+							<div class="angle slide-to-left">
+								<i class="fas fa-angle-left"></i>
+							</div>
+
+							<a href="#" class="themes__item">
+								<img src="img/themes/1_electronic.png" alt="XStore theme">
+							</a>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-2">
+							<a href="#" class="themes__item">
+								<img src="img/themes/2_flowers.png" alt="XStore theme">
+							</a>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-2">
+							<a href="#" class="themes__item">
+								<img src="img/themes/3_christmas.png" alt="XStore theme">
+							</a>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-2">
+							<a href="#" class="themes__item">
+								<img src="img/themes/4 _iwatch.png" alt="XStore theme">
+							</a>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-2">
+							<a href="#" class="themes__item">
+								<img src="img/themes/5 _jewerlly.png" alt="XStore theme">
+							</a>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-2">
+							<a href="#" class="themes__item">
+								<img src="img/themes/6 _hipster.png" alt="XStore theme">
+							</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="themes__row">
+					<div class="row">
+						<div class="col-sm-6 col-md-4 col-lg-2">
+							<a href="#" class="themes__item">
+								<img src="img/themes/7 _business.png" alt="XStore theme">
+							</a>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-2">
+							<a href="#" class="themes__item">
+								<img src="img/themes/8 _suit.png" alt="XStore theme">
+							</a>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-2">
+							<a href="#" class="themes__item">
+								<img src="img/themes/9 _gym.png" alt="XStore theme">
+							</a>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-2">
+							<a href="#" class="themes__item">
+								<img src="img/themes/10 _sushi.png" alt="XStore theme">
+							</a>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-2">
+							<a href="#" class="themes__item">
+								<img src="img/themes/11_handmade.png" alt="XStore theme">
+							</a>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-2">
+							<a href="#" class="themes__item">
+								<img src="img/themes/12_hosting.png" alt="XStore theme">
+							</a>
+
+							<div class="angle slide-to-right">
+								<i class="fas fa-angle-right"></i>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<p class="themes__text">There is no need for coding or specialized knowledge, as the process is quite intuitive.
+				Its dainty design and responsive layout makes it a perfect platform to showcase your products. Welcome to our customers’ team!
+			</p>
+			<div class="themes__proposal">
+				<a href="#" class="link">Get Xstore Now! Just for $59 only!</a>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="others-products">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-xl-3">
+					<div class="featured-box">
+						<h4 class="products-type-title">Featured products</h4>
+						<div class="product-item">
+							<div class="product-photo"></div>
+							<div class="product-proposal">
+								<h5 class="product-heading">Pinstripe blouse dress</h5>
+								<span class="product-price">$720.00</span>
+							</div>
+						</div>
+						<hr>
+						<div class="product-item">
+							<div class="product-photo"></div>
+							<div class="product-proposal">
+								<h5 class="product-heading">logo sweatshirt</h5>
+								<span class="product-price">
+									<del>$720.00</del>
+									<span class="discount">$699.99</span>
+								</span>
+							</div>
+						</div>
+						<hr>
+						<div class="product-item">
+							<div class="product-photo"></div>
+							<div class="product-proposal">
+								<h5 class="product-heading">classic bomber jacket</h5>
+								<span class="product-price">$720.00</span>
+							</div>
+						</div>
+						<hr>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-xl-3">
+					<div class="sale-box">
+						<h4 class="products-type-title">Sale products</h4>
+						<div class="product-item">
+							<div class="product-photo"></div>
+							<div class="product-proposal">
+								<h5 class="product-heading">gold watch</h5>
+								<span class="product-price">
+									<del>$740.00</del>
+									<span class="discount">$650.00</span>
+								</span>
+							</div>
+						</div>
+						<hr>
+						<div class="product-item">
+							<div class="product-photo"></div>
+							<div class="product-proposal">
+								<h5 class="product-heading">logo sweatshirt</h5>
+								<span class="product-price">
+									<del>$720.00</del>
+									<span class="discount">$699.99</span>
+								</span>
+							</div>
+						</div>
+						<hr>
+						<div class="product-item">
+							<div class="product-photo"></div>
+							<div class="product-proposal">
+								<h5 class="product-heading">daiki blouse dress</h5>
+								<span class="product-price">
+									<del>$730.00</del>
+									<span class="discount">$690.00</span>
+								</span>
+							</div>
+						</div>
+						<hr>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-xl-3">
+					<div class="random-box">
+						<h4 class="products-type-title">Random products</h4>
+						<div class="product-item">
+							<div class="product-photo"></div>
+							<div class="product-proposal">
+								<h5 class="product-heading">faux suede braided sandals</h5>
+								<span class="product-price">$720.00</span>
+							</div>
+						</div>
+						<hr>
+						<div class="product-item">
+							<div class="product-photo"></div>
+							<div class="product-proposal">
+								<h5 class="product-heading">cauall derby shoes</h5>
+								<span class="product-price">
+									<del>$720.00</del>
+									<span class="discount">$700.00</span>
+								</span>
+							</div>
+						</div>
+						<hr>
+						<div class="product-item">
+							<div class="product-photo"></div>
+							<div class="product-proposal">
+								<h5 class="product-heading">gold watch</h5>
+								<span class="product-price">
+									<del>$740.00</del>
+									<span class="discount">$650.00</span>
+								</span>
+							</div>
+						</div>
+						<hr>
+					</div>
+				</div>
+
+				<div class="col-lg-12 col-xl-3">
+					<form action="/">
+						<div class="form-email">
+							<h3 class="form-heading">
+								Join Xstore newsletter
+							</h3>
+							<p class="form-text">
+								You can be always up to date with our company news!
+							</p>
+							<div class="input-place">
+								<input type="email" id="email-form" class="email" placeholder="Your email address">
+								<button type="submit" value="submit">
+									&#43;
+								</button>
+							</div>
+							<p class="credit-msg">* Don’t worry, we won’t spam our customers mailboxes</p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="footer__logo">
+						<span>X</span>Store
+					</div>
+					<p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, tempora?</p>
+					<address class="footer__address">
+						48 Park Avenue, <br>
+						East 21st Street, Apt. 304 <br>
+						New York NY 10016 <br><br>
+						Email: <a href="mailto:youremail@site.com">youremail@site.com</a> <br>
+						Phone: <a href="tel:+1 408 996 1010">+1 408 996 1010</a>
+					</address>
+				</div>
+
+
+				<div class="col-lg-3">
+					<div class="useful">
+						<h5 class="heading useful__heading">
+							Useful links
+						</h5>
+
+						<div class="useful__links">
+							<ul class="useful__services">
+								<li><a href="#">Home Page</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Delivery Info</a></li>
+								<li><a href="#">Conditions</a></li>
+								<li><a href="#">Order Tracking</a></li>
+								<li><a href="#">My Account</a></li>
+								<li><a href="#">My Wishlist</a></li>
+							</ul>
+							<ul class="usefil__cities">
+								<li><a href="#">San Francisco</a></li>
+								<li><a href="#">New Orlean</a></li>
+								<li><a href="#">Seatle</a></li>
+								<li><a href="#">Portland</a></li>
+								<li><a href="#">Stockholm</a></li>
+								<li><a href="#">Hoffenheim</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-lg-3">
+					<div class="latest">
+						<h5 class="heading useful__heading">
+							Latest posts
+						</h5>
+
+						<div class="latest__item">
+							<div class="latest__img-box">
+								<img src="img/latest-posts/1.png" alt="Latest posts image">
+							</div>
+							<div class="latest__text-box">
+								<h6 class="latest__title">
+									<a href="#">Lorem ipsum dolor sit amet</a>
+								</h6>
+								<div class="details">
+									<div class="date">
+										<i class="fas fa-calendar-alt"></i>
+										<time datetime="2016-11-20">Nivember 20, 2016</time>
+									</div>
+									<div class="comments">
+										<i class="fas fa-comment"></i>
+										0 Comments
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="latest__item">
+							<div class="latest__img-box">
+								<img src="img/latest-posts/2.png" alt="Latest posts image">
+							</div>
+							<div class="latest__text-box">
+								<h6 class="latest__title">
+									<a href="#">Lorem ipsum dolor sit amet</a>
+								</h6>
+								<div class="details">
+									<div class="date">
+										<i class="fas fa-calendar-alt"></i>
+										<time datetime="2016-11-20">Nivember 20, 2016</time>
+									</div>
+									<div class="comments">
+										<i class="fas fa-comment"></i>
+										0 Comments
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="latest__item">
+							<div class="latest__img-box">
+								<img src="img/latest-posts/3.png" alt="Latest posts image">
+							</div>
+							<div class="latest__text-box">
+								<h6 class="latest__title">
+									<a href="#">Lorem ipsum dolor sit amet</a>
+								</h6>
+								<div class="details">
+									<div class="date">
+										<i class="fas fa-calendar-alt"></i>
+										<time datetime="2016-11-20">Nivember 20, 2016</time>
+									</div>
+									<div class="comments">
+										<i class="fas fa-comment"></i>
+										0 Comments
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-lg-3">
+					<div class="tags">
+						<h5 class="heading useful__heading">
+							Product tags
+						</h5>
+
+						<div class="tags__group">
+							<a href="#" class="item">Illegal</a>
+							<a href="#" class="item">Accessories</a>
+							<a href="#" class="item">Sale</a>
+							<a href="#" class="item">Jeans</a>
+							<a href="#" class="item">Fashion</a>
+							<a href="#" class="item">Illegal</a>
+							<a href="#" class="item">Accessories</a>
+							<a href="#" class="item">Sale</a>
+							<a href="#" class="item">Jeans</a>
+							<a href="#" class="item">Fashion</a>
+							<a href="#" class="item">Accessories</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="bottom-info">
+							<div class="copyright">
+								&copy; Created by <strong>8theme</strong> - Power Elite ThemeForest Author.
+							</div>
+							<ul class="credit-cards">
+								<li class="card"><img src="img/pay/1_cirrus.png" alt="Credit card"></li>
+								<li class="card"><img src="img/pay/2_discover.png" alt="Credit card"></li>
+								<li class="card"><img src="img/pay/3_am-express.png" alt="Credit card"></li>
+								<li class="card"><img src="img/pay/4_visa.png" alt="Credit card"></li>
+								<li class="card"><img src="img/pay/5_paypal.png" alt="Credit card"></li>
+								<li class="card"><img src="img/pay/6_mastercard.png" alt="Credit card"></li>
+								<li class="card"><img src="img/pay/7_west-union.png" alt="Credit card"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- ORDER POPUP -->
+	<div class="popup" id="popup">
+		<div class="popup__content">
+			<div class="popup__text">
+				<h2 class="popup-heading">All Sale up to even 60% off</h2>
+				<div class="cta-text">Limited time</div>
+				<p class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<div class="cta-btns-group">
+					<a href="#" class="cta-btn">Shop now</a>
+					<a href="#" class="cta-btn">Check it</a>
+				</div>
+				<p class="credit-msg popup-credit-msg">* Don’t worry, we won’t spam our customers mailboxes</p>
+			</div>
+			<a href="#home" class="popup__close">&times;</a>
+		</div>
+	</div>
+
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/functions.js"></script>
+
+</body>
+</html>

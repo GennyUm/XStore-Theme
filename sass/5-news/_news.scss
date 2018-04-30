@@ -1,0 +1,139 @@
+.news {
+	position: relative;
+	@media only screen and (max-width: 61.9375em) {
+		text-align: center;
+		
+	}
+
+	&__heading {
+		margin-top: 5rem;
+	}
+	.img-toggles {
+		bottom: -6%;
+		left: 50%;
+		@media only screen and (max-width: 61.9375em) {
+			bottom: -2%;
+		}
+	}
+	&__item {
+		position: relative;
+		@media only screen and (max-width: 61.9375em) {
+			text-align: center;
+			padding-bottom: 5rem;
+		}
+		.slide-to-left {
+			top: 47%;
+			left: -9%;
+		}
+		.slide-to-right {
+			top: 47%;
+			right: -9%;
+		}
+
+		.img-box {
+			position: relative;
+			height: auto;
+			width: 100%;
+			&:hover .onhover {
+				height: 100%;
+				width: 100%;
+			}
+			&:hover .overlay {
+				opacity: 1;
+			}
+			&:hover .read-more {
+				opacity: 1;
+			}
+			img {
+				max-width: 100%;
+			}
+			.overlay {
+				position: absolute;
+				opacity: 0;
+				background-color: rgba(0, 0, 0, .5);
+				transition: all .2s;
+				@media only screen and (max-width: 47.9375em) {
+					display: none;
+				}
+			}
+			.onhover {
+				height: 0;
+				width: 100%;
+				top: 0;
+				left: 0;
+			}
+			.read-more {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color: #fff;
+				border: 2px solid #fff;
+				padding: 1rem 2rem;
+				opacity: 0;
+				transition: all .6s;
+				backface-visibility: hidden;
+			}
+			figcaption {
+				position: absolute;
+				top: 2rem;
+				left: 0;
+				height: 3rem;
+				width: 15rem;
+				color: #fff;
+				font-family: 'LatoBold', sans-serif;
+				font-size: 1.4rem;
+				text-transform: uppercase;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: $primaryColor;
+				@media only screen and (max-width: 47.9375em) {
+					display: none;
+				}
+			}
+		}
+		.text-box {
+			text-align: center;
+			margin-top: 2rem;
+			
+			.caption {
+				color: $headingsColor;
+				font-family: 'LatoBlack', sans-serif;
+				font-size: 2rem;
+				text-transform: uppercase;
+
+			}
+			.details,
+			.text {
+				color: #737373;
+				font-family: 'LatoLight', sans-serif;
+				font-size: 1.6rem;
+			}
+			.details {
+				margin: 1.5rem 0 1.2rem;
+				i {
+					color: $primaryColor;
+				}
+			}
+			.text {
+				margin-bottom: 2rem;
+			}
+			.more a:link,
+			.more a:visited, {
+				color: $primaryColor;
+				font-family: 'LatoRegular', sans-serif;
+				font-size: 1.6rem;
+				text-transform: none;
+				transition: all .2s;
+				&:hover,
+				&:active {
+					color: $primaryFadedColor;
+				}
+				i {
+					padding-left: 1rem;
+				}
+			}
+		}
+	}
+}

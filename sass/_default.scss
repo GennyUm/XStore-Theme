@@ -1,0 +1,29 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	list-style-type: none;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	color: blue;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 2rem;
+}

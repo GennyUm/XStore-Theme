@@ -1,0 +1,564 @@
+.home {
+	text-transform: uppercase;
+
+	// Red panel
+	&__top-user-panel {
+		display: flex;
+		justify-content: space-between;
+		font-family: 'LatoRegular', sans-serif;
+		font-size: 1rem;
+		color: #fff;
+		background-color: $primaryColor;
+		transition: background-color .5s;
+		&.opened-nav-panel-color {
+			background-color: #d64444;
+		}
+		@media only screen and (max-width: 69.4375em) {
+			flex-direction: column;
+			align-items: center;
+			padding: 2.5rem 0 1.5rem;
+		}
+	}
+
+	&__panel-boxes {
+		display: flex;
+		align-items: center;
+		@media only screen and (max-width: 69.4375em) {
+			&--order-box {
+				flex-direction: column;
+			}
+			&--arrow-btn {
+				order: 1;
+				padding-top: 2rem;
+				padding-bottom: 2rem;
+			}
+			&--signup-box {
+				flex-direction: column;
+				font-size: 1.5rem;
+				width: 70%;
+				text-align: center;
+				padding-top: 2.5rem;
+				padding-bottom: 1rem;
+			}
+		}
+		.order-button,
+		.tel,
+		.signin,
+		.create {
+			color: inherit;
+			font-family: inherit;
+			font-size: inherit;
+			text-transform: inherit;
+			cursor: pointer;
+			&:hover,
+			&:active {
+				color: $primaryFadedColor;
+			}
+		}
+	}
+
+	&__lang, &__value {
+		min-width: 9.6rem;
+		line-height: 4.5rem;
+		text-align: center;
+		border-right: 1px solid $primaryFadedColor;
+		@media only screen and (max-width: 69.4375em) {
+			border: none;
+			font-size: 1.5rem;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+		&:hover > :last-child {
+			color: #fff;
+		}
+	}
+
+	&__lang i, &__value i {
+		padding-left: 1.5rem;
+		color: $primaryFadedColor;
+		@media only screen and (max-width: 69.4375em) {
+			display: none;
+		}
+	}
+
+	&__order {
+		min-width: 24rem;
+		padding-left: 1.5rem;
+		@media only screen and (max-width: 69.4375em) {
+			font-size: 1.3rem;
+			letter-spacing: 1.5px;
+			padding-top: 1rem;
+			.order-button {
+				letter-spacing: inherit;
+			}
+		}
+		span {
+			color: $primaryFadedColor;
+		}
+	}
+
+	&__dropdown-arrow {
+		font-size: 1.8rem;
+		text-align: center;
+		transition: transform 1s;
+		&.closeup-arrow {
+			transform: rotateX(180deg);
+		}
+		@media only screen and (max-width: 69.4375em) {
+			font-size: 2.5rem;
+		}
+		i {
+			color: $primaryFadedColor;
+			transition: color .2s;
+			&:hover,
+			&:active {
+				color: #fff;
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__signup {
+		font-family: 'LatoBold', sans-serif;
+		padding-right: 1.5rem;
+		width: 18%;
+		min-width: 19rem;
+		text-align: right;
+		@media only screen and (max-width: 69.4375em) {
+			flex-direction: column;
+			width: 100%;
+			text-align: center;
+			padding-top: 2rem;
+		}
+		span {
+			color: $primaryFadedColor;
+		}
+	}
+
+	&__social-media {
+		width: 36.3%;
+		min-width: 20.8rem;
+		a {
+			font-size: 1rem;
+			color: #fff;
+			display: inline-block;
+			line-height: 4.5rem;
+			padding: 0 1.5rem;
+			border-left: 1px solid $primaryFadedColor;
+			@media only screen and (max-width: 69.4375em) {
+				border-left: none;
+				font-size: 2rem;
+				padding: 0 1rem;
+			}
+		}
+	}
+
+	// Home navigation
+	&__nav-box {
+		display: none;
+	}
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		padding: 2rem 5rem;
+		position: relative;
+		@media only screen and (max-width: 69.4375em) {
+			flex-direction: column;
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
+	}
+
+	&__brand {
+		color: #32302f;
+		font-family: 'LatoBlack', sans-serif;
+		font-size: 3.6rem;
+		@media only screen and (max-width: 69.4375em) {
+			align-self: start;
+		}
+		span {
+			color: $primaryColor;
+		}
+	}
+
+	&__main-nav {
+		@media only screen and (max-width: 69.4375em) {
+			padding: 3rem 0;
+			align-self: center;
+		}
+	}
+
+	&__main-nav a:link,
+	&__main-nav a:visited {
+		font-family: 'LatoBold', sans-serif;
+		font-size: 1.3rem;
+		color: #32302f;
+		&:hover {
+			color: $primaryColor;
+			border-bottom: 2px solid $primaryColor;
+		}
+		&:active,
+		&:focus {
+			border-bottom: none;
+		}
+	}
+
+	&__nav-list {
+		display: flex;
+		align-items: center;
+		@media only screen and (max-width: 69.4375em) {
+			flex-wrap: wrap;
+			
+		}
+	}
+
+	&__list-item {
+		padding: 1rem 1.2rem;
+		@media only screen and (max-width: 69.4375em) {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+	}
+
+	&__search > i,
+	&__favorites > i,
+	&__purchases > i {
+		color: #333;
+		font-size: 2rem;
+	}
+
+	&__search {
+		z-index: -1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		.input-search {
+			padding-left: 2rem;
+			font-size: 2.5rem;
+			opacity: 0;
+			height: 100%;
+			width: 0;
+			background-color: #fafafa;
+			border: none;
+			transition: all .2s;
+			@media only screen and (max-width: 69.4375em) {
+				height: 30%;
+			}
+			&.search-active {
+				opacity: 1;
+				height: 100%;
+				width: 100%;
+				@media only screen and (max-width: 69.4375em) {
+					height: 30%;
+				}
+			}
+		}
+		.close-search {
+			&:link,
+			&:visited {
+				opacity: 0;
+				visibility: hidden;
+				color: #939393;
+				font-size: 2.5rem;
+				position: absolute;
+				top: 50%;
+				right: 2rem;
+				transform: translateY(-50%);
+				line-height: 50%;
+				transition: all .2s;
+				@media only screen and (max-width: 69.4375em) {
+					top: 15%;
+				}
+			}
+
+			&:hover,
+			&:active {
+				color: $primaryFadedColor;
+			}
+			&.close-btn {
+				opacity: 1;
+				visibility: visible;
+
+			}
+		}
+	}
+
+	::-webkit-input-placeholder { 
+		font-family: 'LatoRegular', sans-serif;
+		font-size: 2rem;
+		color: #1c1a19;
+	}
+	::-moz-placeholder { 
+		font-family: 'LatoRegular', sans-serif;
+		font-size: 2rem;
+		color: #1c1a19;
+	}
+	:-ms-input-placeholder { 
+		font-family: 'LatoRegular', sans-serif;
+		font-size: 2rem;
+		color: #1c1a19;
+	}
+	:-moz-placeholder { 
+		font-family: 'LatoRegular', sans-serif;
+		font-size: 2rem;
+		color: #1c1a19;
+	}
+
+	&__search-icon {
+		position: absolute;
+		top: 3.2rem;
+		right: 21rem;
+		transition: all .2s;
+		cursor: pointer;
+		@media only screen and (max-width: 69.4375em) {
+			top: 3rem;
+			right: 3.5rem;
+		}
+		&.icon-fade {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	&__user-bar {
+		display: flex;
+		align-items: center;
+		@media only screen and (max-width: 69.4375em) {
+			padding-bottom: 2rem;
+			align-self: center;
+		}
+		& > *:not(:last-child) {
+			margin-left: 2.8rem;
+		}
+	}
+
+	&__favorites i {
+		font-size: 2rem;
+	}
+
+	&__purchases {
+		position: relative;
+		&:after {
+			content: '2';
+			display: block;
+			font-size: 1rem;
+			height: 1.5rem;
+			width: 1.5rem;
+			background-color: $primaryColor;
+			border-radius: 50%;
+			color: #fff;
+			position: absolute;
+			top: -.3rem;
+			right: -.5rem;
+			padding-right: .1rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&__total-price {
+		font-size: 1.5rem;
+		padding-left: .7rem;
+	}
+
+	// Home image
+	&__img-box {
+		position: relative;
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	&__text {
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		display: flex;
+		flex-direction: column;
+		width: 55.5rem;
+		@media only screen and (max-width: 69.4375em) {
+			width: 35rem;
+		}
+		@media only screen and (max-width: 47.9375em) {
+			width: 20rem;
+		}
+		@media only screen and (max-width: 33.6875em) {
+			width: 15rem;
+		}
+	}
+
+	&__heading {
+		order: 1;
+		color: #1c1a19;
+		font-family: 'LatoBlack', sans-serif;
+		font-size: 14.5rem;
+		line-height: .7;
+		@media only screen and (max-width: 74.9375em) {
+			font-size: 11rem;
+		}
+		@media only screen and (max-width: 69.4375em) {
+			font-size: 7rem;
+		}
+		@media only screen and (max-width: 47.9375em) {
+			font-size: 4rem;
+		}
+		span {
+			color: $primaryColor;
+			font-size: 11.5rem;
+			margin-left: 16.3rem;
+			@media only screen and (max-width: 74.9375em) {
+				font-size: 7.5rem;
+			}
+			@media only screen and (max-width: 69.4375em) {
+				font-size: 5rem;
+				margin-left: 10rem;
+			}
+			@media only screen and (max-width: 47.9375em) {
+				font-size: 3rem;
+				margin-left: 5rem;
+			}
+		}
+	}
+
+	&__cta-text {
+		font-family: 'LatoBlack', sans-serif;
+		font-size: 1.4rem;
+		letter-spacing: .5rem;
+		color: #999;
+		margin: 0 0 3rem auto;
+		max-width: 32rem;
+		line-height: 2rem;
+		@media only screen and (max-width: 74.9375em) {
+			margin-left: 0;
+		}
+		@media only screen and (max-width: 69.4375em) {
+			font-size: 1rem;
+		}
+		@media only screen and (max-width: 47.9375em) {
+			font-size: .7rem;
+			letter-spacing: 1px;
+			margin-bottom: 1rem;
+		}
+	}
+
+	// Purchases card
+	&__basket {
+		opacity: 0;
+		position: absolute;
+		top: 1rem;
+		right: 0;
+		background-color: #fff;
+		height: 45rem;
+		width: 37.5rem;
+		padding: 2rem 4rem;
+		transition: all .3s;
+		z-index: 1;
+		&.opened {
+			opacity: 1;
+		}
+		@media only screen and (max-width: 69.4375em) {
+			height: 40rem;
+		}
+		@media only screen and (max-width: 47.9375em) {
+			top: 0;
+		}
+		@media only screen and (max-width: 35.9375em) {
+			padding-left: 7rem;
+			padding-right: 7rem;
+		}
+	}
+
+	&__basket-data-box {
+		text-transform: uppercase;
+		font-family: 'LatoBold', sans-serif;
+	}
+
+	&__basket-heading {
+		color: #1c1a19;
+		font-size: 1.2rem;
+		border-bottom: 1px solid #eee;
+		padding-bottom: 1rem;
+	}
+
+	&__basket-item {
+		display: flex;
+		padding-top: 1.5rem;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid #eee;
+		.basket-text {
+			padding-left: 1.5rem;
+			padding-top: 1rem;
+			.item-heading {
+				color: #1c1a19;
+				font-size: 1.4rem;
+				letter-spacing: 1px;
+			}
+			.basket-price {
+				color: #a4a4a4;
+				font-family: 'LatoRegular', sans-serif;
+				font-size: 1.4rem;
+				padding-top: 1rem;
+			}
+		}
+		.close-btn {
+			color: #bbb;
+			font-size: 1.8rem;
+			height: 1rem;
+		}
+	}
+
+	&__basket-total {
+		color: #404040;
+		font-size: 1.3rem;
+		text-align: center;
+		letter-spacing: 1px;
+		padding-top: 1rem;
+		span {
+			color: #e74948;
+			font-size: 1.9rem;
+		}
+	}
+
+	&__basket-btns {
+		letter-spacing: 1px;
+		text-align: center;
+		margin-top: 2rem;
+		.btn {
+			color: #fff;
+			display: block;
+			width: 85%;
+			margin: 0 auto;
+			padding: 1.5rem 0;
+			@media only screen and (max-width: 69.4375em) {
+				display: inline-block;
+				width: 45%;
+			}
+			&--check {
+				background-color: #e74948;
+				margin-bottom: 1rem;
+			}
+			&--view {
+				background-color: #383838;
+			}
+		}
+	}
+
+	&__close-basket:link,
+	&__close-basket:visited {
+		position: absolute;
+		top: .5rem;
+		right: 1.3rem;
+		color: lightgrey;
+		font-size: 3rem;
+		transition: all .2s;
+		&:hover,
+		&:active {
+			color: $primaryFadedColor;
+		}
+	}
+}
